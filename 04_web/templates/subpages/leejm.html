@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include 'public/head.html' ignore missing %}
+</head>
+
+
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+{% include 'public/top.html' ignore missing %}
+
+<!-- 제목 -->
+<div class="w3-row-padding" id="plans" style="margin-top:80px">
+  <div class="w3-center w3-padding-64" id="predict">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">이재명</span>
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+<!-- 내용 첫 줄 -->
+<div class="w3-row-padding w3-center w3-margin-top">
+
+  <!-- 프로필 -->
+  <div class="w3-quarter">
+    <div class="w3-card w3-container w3-blue w3-margin-bottom" style="min-height:300px">
+      <div class="w3-container" style="margin-top: 30px; margin-bottom: 10px;">
+          <h4 class="w3-center">이재명</h4>
+          <p class="w3-center"><img src="/static/images/profile_candidate/leejm.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+          <hr>
+          <p class="w3-left-align"><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> 현 경기도지사 (제35대)</p>
+          <p class="w3-left-align"><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> 경북 안동 출생</p>
+          <p class="w3-left-align"><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> December 8, 1963</p>
+         </div>
+    </div>
+  </div>
+
+  <!-- 긍정률 분석 -->
+  <div class="w3-quarter">
+    <div class="w3-card w3-container w3-margin-bottom" style="min-height:300px; ">
+        <img src="/static/images/positive_candidate/이재명.png" alt="Forest" style="width:100%; height:100%;margin-top: 10px;">
+        <p><strong>긍정률 분석</strong></p>
+    </div>
+  </div>
+
+<!-- 테마주 -->
+    <div class="w3-half">
+      <div class="w3-card w3-container w3-margin-bottom" style="max-height:400px">
+          <img src="/static/images/stocks/이재명.png" alt="이재명 테마주" style="width:100%; height:280px; margin-top:20px">
+          <p class="w3-center"><strong>테마주 등락률</strong></p>
+      </div>
+    </div>
+  <br>
+</div>
+
+<!-- 내용 -->
+<div class="w3-row-padding w3-center">
+
+
+
+
+    <!-- 2030 키워드분석 -->
+    <div class="w3-half">
+      <div class="w3-card w3-container w3-margin-bottom" style="min-height:400px">
+          <img src="/static/images/keyword_candidate/이재명.png" alt="Forest" style="width:100%; height:100%; margin-top: 40px;">
+          <p><strong>2030 키워드 분석</strong></p>
+      </div>
+    </div>
+
+      <!-- 핵심문장   -->
+      <div class="w3-half w3-row-padding w3-margin-bottom" style="min-height:300px">
+            <div class="w3-card-2">
+                <div class="card-block">
+                    <div class="table-responsive">
+                        <table border="1">
+                            <th class="jb-bold">2030 핵심 문장</th>
+                            {% for sent in df.values %}
+                            <tr>
+                                <td>{{sent[1]}}</td>
+                            </tr>
+                            {% endfor%}
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+  <br>
+</div>
+{% include 'public/candi.html' ignore missing %}
+
+</div>
+
+<!-- Footer -->
+{% include 'public/footer.html' ignore missing %}
+
+
+
+
+</body>
+</html>

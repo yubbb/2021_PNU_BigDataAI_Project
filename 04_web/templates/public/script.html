@@ -1,0 +1,168 @@
+<!-- barchart 값 넣는 곳 -->
+<script>
+    Highcharts.chart('barchart', {
+        title: {
+            text: '2021-03-01 ~ 2021-05-14 '
+        },
+        xAxis: {
+            categories: ['윤석열', '이재명', '이낙연', '홍준표', '안철수',
+                '정세균', '유승민', '심상정', '추미애', '황교안', '김부겸']
+        },
+        // labels: {
+            // items: [{
+                // html: '총 사용한 데이터',
+        //         style: {
+        //             left: '770px',
+        //             top: '18px',
+        //             color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+        //         }
+        //     }]
+        // },
+        series: [{
+            type: 'column',
+            name: '긍정률',
+            data: [9.1, 7.4, 4.8, 13.4, 8.4, 5.6, 7.8, 4.1, 6.8, 5.5, 6.3],
+            color: '#AE2012'
+        }, {
+            type: 'column',
+            name: '적합도 (여론조사)',
+            data: [19, 25, 10, 4, 3, 2, 2, 1, 1, 1, 1],
+            color: '#D3D3D3'
+        } ]
+    //     {
+    //         type: 'pie',
+    //         name: '총 사용한 데이터',
+    //         data: [{
+    //             name: '조선일보',
+    //             y: 3623,
+    //             color: '#BB3E03'
+    //         }, {
+    //             name: '중앙일보',
+    //             y: 15191,
+    //             color: '#CA6702'
+    //         }, {
+    //             name: '동아일보',
+    //             y: 14553,
+    //             color: '#EE9B00'
+    //         }, {
+    //             name: '유튜브',
+    //             y: 31148,
+    //             color: '#FEFAE0'
+    //         }, {
+    //             name: '한겨레',
+    //             y: 9462,
+    //             color: '#94D2BD'
+    //         }, {
+    //             name: '경향신문',
+    //             y: 12505,
+    //             color: '#0A9396'
+    //         }, {
+    //             name: 'JTBC',
+    //             y: 653,
+    //             color: '#43AA8B'
+    //         },{
+    //             name: 'MBC',
+    //             y: 8470,
+    //             color: '#005F73'
+    //         }],
+    //         center: [900, 20],
+    //         size: 100,
+    //         showInLegend: false,
+    //         dataLabels: {
+    //             enabled: false
+    //         }
+    //     }
+    // ]
+    });
+    
+    Highcharts.chart('barchart_survey', {
+        title: {
+            text: '2021-05-17 ~ 2021-05-18'
+        },
+        xAxis: {
+            categories: ['윤석열', '이재명', '이낙연', '홍준표', '안철수',
+                '정세균', '유승민', '심상정', '추미애', '황교안', '김부겸']
+        },
+
+        series: [{
+            type: 'column',
+            name: '적합도',
+            data: [19, 25, 10, 4, 3, 2, 2, 1, 1, 1, 1],
+            color: '#f57c00'
+        },  
+        ]
+    });
+
+    Highcharts.chart('barchart_survey2', {
+        title: {
+            text: '2021-05-17 ~ 2021-05-18'
+        },
+        xAxis: {
+            categories: ['윤석열', '이재명', '이낙연', '홍준표', '안철수',
+                '정세균', '유승민', '심상정', '추미애', '황교안', '김부겸']
+        },
+
+        series: [{
+            type: 'column',
+            name: '적합도',
+            data: [19, 25, 10, 4, 3, 2, 2, 1, 1, 1, 1],
+            color: '#f57c00'
+        },  
+        ]
+    });
+
+    Highcharts.chart('barchart1', {
+        title: {
+            text: '2021-05-17 ~ 2021-05-18'
+        },
+        xAxis: {
+            categories: ['윤석열', '이재명', '이낙연', '홍준표', '안철수',
+                '정세균', '유승민', '심상정', '추미애', '황교안', '김부겸']
+        },
+
+        series: [{
+            type: 'column',
+            name: '적합도',
+            data: [19, 25, 10, 4, 3, 2, 2, 1, 1, 1, 1],
+            color: '#f57c00'
+        },  
+        ]
+    });
+
+    Highcharts.chart('barchart2', {
+        title: {
+            text: '2021-05-17 ~ 2021-05-18'
+        },
+        xAxis: {
+            categories: ['윤석열', '이재명', '이낙연', '홍준표', '안철수',
+                '정세균', '유승민', '심상정', '추미애', '황교안', '김부겸']
+        },
+
+        series: [{
+            type: 'column',
+            name: '적합도',
+            data: [19, 25, 10, 4, 3, 2, 2, 1, 1, 1, 1],
+            color: '#f57c00'
+        },  
+        ]
+    });
+
+
+    Highcharts.chart('barchart_yoon', {
+        title: {
+            text: '2021-05-17 ~ 2021-05-18'
+        },
+        xAxis: {
+            categories: ['윤석열']
+        },
+
+        series: [{
+            type: 'column',
+            name: '적합도',
+            data: [19],
+            color: '#f57c00'
+        },  
+        ]
+    });
+    
+</script>
